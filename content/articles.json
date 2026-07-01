@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "priprava-nemovitosti-na-prodej",
+    "category": "Prodej",
+    "readTime": "5 min čtení",
+    "title": "Jak připravit nemovitost na prodej, aby vynikla",
+    "summary": "První dojem se neopakuje. Co upravit, co nechat být a kde má smysl investovat před focením.",
+    "intro": "Dobře připravená nemovitost nepůsobí jako kulisa. Pomáhá zájemci představit si vlastní život v prostoru — a zároveň ukazuje, že je o dům či byt dobře postaráno.",
+    "sections": [
+      { "heading": "Začněte čistotou a prostorem", "text": "Největší efekt mívají jednoduché kroky: důkladný úklid, méně osobních věcí a průchodné místnosti. Cílem není prostor odosobnit, ale dát mu klid a čitelnost." },
+      { "heading": "Opravy vybírejte podle dopadu", "text": "Drobnosti jako nefunkční klika, odlupující se lišta nebo přepálená žárovka umí zbytečně snižovat dojem. Velké rekonstrukce před prodejem ale nemusí být návratné — rozhodnutí vždy stojí za to propočítat." },
+      { "heading": "Prezentace musí držet pohromadě", "text": "Fotografie, video, text inzerátu i prohlídka mají vyprávět stejný příběh. Právě konzistentní prezentace pomáhá přivést vhodné zájemce, ne jen vysoký počet kliknutí." }
+    ]
+  },
+  {
+    "slug": "realna-prodejni-cena",
+    "category": "Cena",
+    "readTime": "4 min čtení",
+    "title": "Prodejní cena bez dojmů: co ji skutečně určuje",
+    "summary": "Nabídková cena není tržní cena. Ukazujeme, jak se dobrý odhad opírá o data i zkušenost z lokality.",
+    "intro": "Správně nastavená cena není ani nejvyšší přání prodávajícího, ani nejnižší rychlá cesta k podpisu. Je to strategické rozhodnutí, které ovlivní celý průběh prodeje.",
+    "sections": [
+      { "heading": "Rozhodují srovnatelné prodeje", "text": "Důležité nejsou jen ceny, za které se nemovitosti nabízejí, ale zejména částky, za které se skutečně prodaly. Srovnáváme typ, stav, polohu, dispozici i situaci na trhu." },
+      { "heading": "Lokalita je víc než město", "text": "Rozdíl může vytvořit konkrétní ulice, výhled, patro, parkování nebo budoucí výstavba v okolí. Dvě podobné nemovitosti proto nemusí mít stejnou hodnotu." },
+      { "heading": "Cena je součást strategie", "text": "Přestřelená cena často prodlouží prodej a inzerát postupně ztratí pozornost. Dobrá strategie naopak vytváří zdravý zájem a lepší vyjednávací pozici." }
+    ]
+  },
+  {
+    "slug": "fotografie-ktere-prodavaji",
+    "category": "Prezentace",
+    "readTime": "6 min čtení",
+    "title": "Proč kvalitní fotografie nejsou jen hezký obrázek",
+    "summary": "Světlo, kompozice a pořadí záběrů rozhodují, jestli zájemce otevře detail nabídky a objedná se na prohlídku.",
+    "intro": "Fotografie jsou první prohlídkou nemovitosti. Během několika vteřin dávají zájemci odpověď na otázku, zda chce vědět víc. Proto musí být nejen pěkné, ale hlavně pravdivé a promyšlené.",
+    "sections": [
+      { "heading": "Světlo mění prostor", "text": "Správný čas focení pomůže ukázat orientaci bytu, atmosféru místností i výhled. Přirozené světlo je výhoda, ale musí se pracovat i s kontrastem a barvou interiéru." },
+      { "heading": "Široký záběr není vždy lepší", "text": "Příliš široký objektiv může prostor zkreslit a později zklamat na prohlídce. Dobrá fotografie drží proporce, vede oko a zůstává věrná realitě." },
+      { "heading": "Série fotografií vypráví příběh", "text": "Pořadí záběrů má mít logiku: od silného úvodu přes jednotlivé místnosti až po detail a okolí. Zájemce tak získá pocit, že nemovitost opravdu poznává." }
+    ]
+  }
+]
