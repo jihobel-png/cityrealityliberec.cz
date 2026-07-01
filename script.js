@@ -255,10 +255,16 @@ const sendContactToEndpoint = async (form, data) => {
     });
 
     const contentType = response.headers.get("content-type") || "";
-    const payload = contentType.includes("application/json") ? await response.json() : {};
+    if (!contentType.includes("application/json")) {
+      throw new Error("Serverový endpoint není na tomto hostingu dostupný.");
+    }
 
-    if (!response.ok || payload.success === false) {
-      throw new Error(payload.message || "Formulář se nepodařilo odeslat.");
+    const payload = await response.json();
+
+    if (!response.ok || payload.success !== true) {
+      const error = new Error(payload.message || "Formulář se nepodařilo odeslat.");
+      error.isValidationError = response.status >= 400 && response.status < 500;
+      throw error;
     }
 
     return payload;
@@ -301,7 +307,12 @@ contactForm?.addEventListener("submit", async (event) => {
     form.reset();
     setContactStartedAt();
     setContactStatus(payload.message || "Děkujeme, poptávka byla odeslána. Ozveme se vám co nejdříve.", "success");
-  } catch {
+  } catch (error) {
+    if (error?.isValidationError) {
+      setContactStatus(error.message, "error");
+      return;
+    }
+
     const mailto = buildContactMailto(form, data);
     setContactStatus(
       "Serverové odeslání teď není dostupné, proto jsme vám připravili e-mail s vyplněnou poptávkou.",

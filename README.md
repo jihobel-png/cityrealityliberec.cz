@@ -22,6 +22,8 @@ Formulář se nejprve pokusí odeslat poptávku přes serverový endpoint `api/c
 
 Po nasazení je potřeba udělat ostrý test z produkční domény. Některé hostingy mají PHP `mail()` omezené; pokud by e-maily nechodily, je vhodné napojit stejný formulář na SMTP nebo formulářovou službu.
 
+Na čistě statickém hostingu typu GitHub Pages se PHP endpoint nespustí. Formulář v takovém případě použije záložní e-mailový režim, aby návštěvník nepřišel o vyplněnou poptávku.
+
 ## Právní dokumenty a cookies
 
 Web obsahuje stránky `pravni-informace.html`, `ochrana-osobnich-udaju.html` a `cookies.html`. Cookie lišta je řešená v `script.js`; aktuálně nejsou zapojené žádné analytické ani marketingové nástroje třetích stran. Pokud se později doplní analytika, reklamní pixely nebo externí formulářová služba, je potřeba před spuštěním aktualizovat texty a spouštět tyto nástroje až po odpovídajícím souhlasu.
