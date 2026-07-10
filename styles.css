@@ -739,26 +739,38 @@ h3 {
 
 .team-grid {
   display: grid;
-  grid-template-columns: 1.07fr 0.93fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: start;
-  gap: 80px;
+  gap: 34px;
 }
 
 .profile-leona {
-  margin-top: 190px;
+  margin-top: 95px;
+}
+
+.profile-jana {
+  margin-top: 42px;
 }
 
 .profile-photo {
   position: relative;
-  height: 650px;
+  height: 560px;
   margin-bottom: 32px;
   overflow: hidden;
   background: var(--paper-warm);
   border-radius: var(--radius-lg);
 }
 
+.profile-dagmar .profile-photo {
+  height: 620px;
+}
+
 .profile-leona .profile-photo {
   height: 530px;
+}
+
+.profile-jana .profile-photo {
+  height: 575px;
 }
 
 .profile-photo img {
@@ -768,11 +780,15 @@ h3 {
 }
 
 .profile-dagmar .profile-photo img {
-  object-position: 50% 30%;
+  object-position: 50% 34%;
 }
 
 .profile-leona .profile-photo img {
   object-position: 50% 15%;
+}
+
+.profile-jana .profile-photo img {
+  object-position: 50% 18%;
 }
 
 .profile-label {
@@ -2030,6 +2046,17 @@ h3 {
     gap: 50px;
   }
 
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .profile-jana {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(100%, 520px);
+    margin-top: 0;
+  }
+
   .portfolio-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2047,7 +2074,9 @@ h3 {
     grid-column: 1 / -1;
   }
 
-  .profile-photo {
+  .profile-photo,
+  .profile-dagmar .profile-photo,
+  .profile-jana .profile-photo {
     height: 560px;
   }
 
@@ -2222,11 +2251,19 @@ h3 {
     gap: 80px;
   }
 
-  .profile-leona {
+  .profile-leona,
+  .profile-jana {
     margin-top: 0;
   }
 
+  .profile-jana {
+    width: 100%;
+    justify-self: stretch;
+  }
+
   .profile-photo,
+  .profile-dagmar .profile-photo,
+  .profile-jana .profile-photo,
   .profile-leona .profile-photo {
     height: min(750px, 120vw);
   }
@@ -2391,6 +2428,8 @@ h3 {
   }
 
   .profile-photo,
+  .profile-dagmar .profile-photo,
+  .profile-jana .profile-photo,
   .profile-leona .profile-photo {
     height: 125vw;
     max-height: 620px;
